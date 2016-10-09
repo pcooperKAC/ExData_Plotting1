@@ -30,7 +30,7 @@ legend("top", lty = c(1,1), col = c("black", "blue", "red"),
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
         bty = "n")
 
-plot(powerdata$DateTime, powerdata$Global_active_power, type = "l",  # plot reactive power
+plot(powerdata$DateTime, powerdata$Global_reactive_power, type = "l",  # plot reactive power
      xlab = "datetime", ylab = "Global Reactive Power")
 
 dev.copy(png, file = "plot4.png")                  # save as png
